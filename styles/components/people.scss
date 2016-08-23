@@ -1,0 +1,100 @@
+//PEOPLE
+.people{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background: darken($colorback, 10%);
+}
+
+.person-photo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 15px;
+}
+
+.person-name{
+    color: $color3;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:520px){
+    .people{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .person{
+        width: 47%;
+        margin-left: 5px;
+        
+        &:last-child{
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (min-width:680px){
+    .people{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .person{
+        width: 31.1%;
+        margin-left: 5px;
+        
+        &:nth-child(4){
+            width: 47%;
+        }
+        
+        &:last-child{
+            width: 47%;
+        }
+        
+    }
+}
+
+@media screen and (min-width:920px){
+    .people{
+        //width: 100%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-left: 23px;
+        margin-right: 23px;
+        
+    }
+    
+    .person{
+        width: 20%;
+        
+        &:first-child{
+            margin-left: 0px;
+        }
+        
+        &:nth-child(4){
+            width: 20%;
+        }
+        
+        &:last-child{
+            width: 20%;
+        }
+    }
+}
+

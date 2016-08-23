@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    
+    <!-- SEO -->
+    <meta name="description" content="pagina de ejemplo de armando" />
+    <meta name="robots" content="Index, Follow">
+    <!-- --- -->
+    
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://file.myfontastic.com/X4Ltd6qg3cFB7CGUnrxRTT/icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul class="main-menu">
+                <li class="menu-item"><a class="logo" href="index.html"><i class="icon-user"></i></a></li>
+                <li class="menu-item"><a href="index.html" class="respon-item">Inicio</a></li>
+                <li class="menu-item"><a href="servicios.html" class="respon-item">Servicios</a></li>
+                <li class="menu-item"><a href="quienes.html" class="respon-item">Quienes somos</a></li>
+                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-item icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+        </ul>
+        <div class="banner">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+        </div>
+    </header>
+    
+    <section>
+        <div class="servicios">
+            <div class="servicio">
+                <span><i class="material-icons">phone_iphone</i></span>
+                <span>LOREM</span>
+            </div>
+            <div class="servicio">
+                <span><i class="material-icons">phone_iphone</i></span>
+                <span>IPSUM</span>
+            </div>
+            <div class="servicio">
+                <span><i class="material-icons">phone_iphone</i></span>
+                <span>DOLOR</span>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+        <div class="people">
+            <div class="person">
+                <img src="images/profile.jpeg" alt="profile" class="person-photo">
+                <p class="person-name">Worker One</p>
+            </div>
+            <div class="person">
+                <img src="images/profile2.jpeg" alt="profile" class="person-photo">
+                <p class="person-name">Worker Two</p>
+            </div>
+            <div class="person">
+                <img src="images/profile.jpeg" alt="profile" class="person-photo">
+                <p class="person-name">Worker Three</p>
+            </div>
+            <div class="person">
+                <img src="images/profile2.jpeg" alt="profile" class="person-photo">
+                <p class="person-name">Worker Four</p>
+            </div>
+            <div class="person">
+                <img src="images/profile.jpeg" alt="profile" class="person-photo">
+                <p class="person-name">Worker Five</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="wherecontact">
+        <div class="where">
+            <p class="where-text">Where we are</p>
+            <div id="contact-map">
+                
+            </div>
+        </div>
+        <div class="contact">
+            <p class="where-text">Contact Us</p>
+            <form action="contact.php" method="post" class="form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="20" rows="10"></textarea>
+                </div>
+                <input type="submit" value="Send" class="send">
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <a href="http://twitter.com" class="footer-icon" target="_blank"><i class="icon-twitter"></i></a>
+        <a href="http://facebook.com" class="footer-icon" target="_blank"><i class="icon-facebook"></i></a>
+        <a href="http://youtube.com" class="footer-icon" target="_blank"><i class="icon-youtube-play"></i></a>
+    </footer>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>

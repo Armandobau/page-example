@@ -1,0 +1,94 @@
+//WHERE MAP AND CONTACT FORM
+.wherecontact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.where-text{
+    color: $color3;
+    border-bottom: 1px solid $color2;
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+    font-weight: 500;
+}
+
+//MAP
+.where{
+    width: 95%;
+    margin-bottom: 20px;
+}
+#contact-map{
+    //display: flex;
+    height: 250px;
+    border: 1px solid $color2;
+}
+
+//FORM
+.contact{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+label{
+    color: $color3;
+}
+
+input, textarea{
+    width: 100%;
+}
+
+.send{
+    width: 80px;
+    height: 25px;
+    color: $color3;
+    background: $color2;
+    border: none;
+    border-radius: 1px;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width:920px){
+    .wherecontact{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        height: 500px;
+        margin-left: 23px;
+        margin-right: 23px;
+    }
+    
+    .where{
+        height: 90%;
+        margin-right: 7px;
+    }
+    
+    .contact{
+        height: 90%;
+        margin-left: 7px;
+    }
+    
+    .where-text{
+        height: 5%;
+    }
+    
+    #contact-map{
+        height: 80%;
+    }
+}
