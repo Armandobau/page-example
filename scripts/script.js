@@ -5,6 +5,7 @@ function myFunction() {
 
 
 //Google Maps
+/*
 function initialize() {
     
     var myLatLng = {lat: 40.4308438, lng: -3.6628667};
@@ -24,6 +25,6 @@ function initialize() {
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
-
+*/
 
 
