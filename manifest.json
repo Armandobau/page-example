@@ -1,0 +1,19 @@
+{
+  "name": "Dominio de Ejemplo",
+  "short_name": "DomEjemplo",
+  "lang": "es",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#3498DB",
+  "background_color": "#3498DB",
+  "icons": [
+    {
+      "src": "images/profile.jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/profile.jpeg",
+      "sizes": "144x144"
+    }
+  ]
+}

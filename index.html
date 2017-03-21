@@ -1,27 +1,47 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Dominio de ejemplo de armando</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
     
     
     <!-- SEO -->
-    <meta name="description" content="pagina de ejemplo de armando" />
+    <meta name="description" content="pagina de ejemplo de armando, ejemplo de pagina de armando, pagina de armando" />
     <meta name="robots" content="Index, Follow">
     <!-- --- -->
     
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://file.myfontastic.com/X4Ltd6qg3cFB7CGUnrxRTT/icons.css" rel="stylesheet">
+    
+    
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="DomEjemplo">
+    <meta name="apple-mobile-web-app-title" content="DomEjemplo">
+    <meta name="theme-color" content="#3498DB">
+    <meta name="msapplication-navbutton-color" content="#3498DB">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/index.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" sizes="192x192" href="images/profile.jpeg">
+    <link rel="apple-touch-icon" sizes="192x192" href="images/profile.jpeg">
+    <link rel="icon" sizes="144x144" href="images/profile.jpeg">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/profile.jpeg">
+    
+    
 </head>
 <body>
     <header>
         <ul class="main-menu">
                 <li class="menu-item"><a class="logo" href="index.html"><i class="icon-user"></i></a></li>
-                <li class="menu-item"><a href="index.html" class="respon-item">Inicio</a></li>
-                <li class="menu-item"><a href="servicios.html" class="respon-item">Servicios</a></li>
-                <li class="menu-item"><a href="quienes.html" class="respon-item">Quienes somos</a></li>
-                <li class="menu-item"><a href="contacto.html">Contacto</a></li>
+                <li class="menu-item"><a href="aaa/menuSuperior/index.html" class="respon-item">Inicio</a></li>
+                <li class="menu-item"><a href="aaa/menuLateral/index.html" class="respon-item">Servicios</a></li>
+                <li class="menu-item"><a href="aaa/menuIosStyle/index.html" class="respon-item">Quienes somos</a></li>
+                <li class="menu-item"><a href="aaa/slideshow/index.html">Contacto</a></li>
                 <li class="menu-item icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
         </ul>
         <div class="banner">
@@ -72,12 +92,12 @@
     </section>
     
     <section class="wherecontact">
-        <div class="where">
+        <!--<div class="where">
             <p class="where-text">Where we are</p>
             <div id="contact-map">
                 
             </div>
-        </div>
+        </div>-->
         <div class="contact">
             <p class="where-text">Contact Us</p>
             <form action="contact.php" method="post" class="form">
@@ -109,9 +129,21 @@
     </footer>
     
 
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
     
     <script src="scripts/script.js"></script>
+    
+    <script>
+        if ('serviceWorker' in navigator) {
+            console.log("Will the service worker register?");
+            navigator.serviceWorker.register('./service-worker.js')
+              .then(function(reg){
+                console.log("Yes, it did.");
+              }).catch(function(err) {
+                console.log("No it didn't. This happened: ", err)
+              });
+        }
+    </script>
     
 </body>
 </html>
