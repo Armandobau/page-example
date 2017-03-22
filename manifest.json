@@ -2,7 +2,7 @@
     "name": "Dominio de Ejemplo",
     "short_name": "DomEjemplo",
     "lang": "es",
-    "start_url": "https://www.dominiodeejemplo.es/index.html",
+    "start_url": "https://armandobau.github.io/page-example/index.html",
     "display": "standalone",
     "theme_color": "#3498DB",
     "background_color": "#3498DB",
