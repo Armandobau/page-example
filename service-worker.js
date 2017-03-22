@@ -1,6 +1,6 @@
 var cacheName = 'ejemPrueba-2';
 var filesToCache = [
-  '/page-example/',
+  //'/page-example/',
   '/page-example/index.html',
   '/page-example/scripts/script.js',
   '/page-example/styles/styles.css',
