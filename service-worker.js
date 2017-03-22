@@ -1,7 +1,7 @@
 var dataCacheName = 'ejempru-v1';
 var cacheName = 'ejemPrueba-1';
 var filesToCache = [
-  //'/page-example/',
+  '/page-example/',
   '/page-example/index.html',
   '/page-example/scripts/script.js',
   '/page-example/styles/styles.css',
