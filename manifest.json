@@ -8,11 +8,13 @@
     "background_color": "#3498DB",
     "icons": [
         {
-            "src": "/images/images/profile.jpeg",
+            "src": "/images/manifoldjs/Square150x150Logo.scale-100.png",
+            "type": "image/jpeg",
             "sizes": "192x192"
         },
         {
-            "src": "/images/images/profile.jpeg",
+            "src": "/images/manifoldjs/Square150x150Logo.scale-100.png",
+            "type": "image/jpeg",
             "sizes": "144x144"
         },
         {
