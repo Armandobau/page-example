@@ -1,15 +1,15 @@
 var cacheName = 'ejemPrueba-1';
 var filesToCache = [
   '/',
-  '/index.html',
-  '/scripts/script.js',
-  '/styles/styles.css',
-  '/images/profile.jpg',
-  '/images/profile2.jpg',
-  '/images/carpenterL.jpg',
-  '/images/carpenterM.jpg',
-  '/images/carpenterS.jpg',
-  '/images/carpenterXS.jpg'
+  '/page-example/index.html',
+  '/page-example/scripts/script.js',
+  '/page-example/styles/styles.css',
+  '/page-example/images/profile.jpg',
+  '/page-example/images/profile2.jpg',
+  '/page-example/images/carpenterL.jpg',
+  '/page-example/images/carpenterM.jpg',
+  '/page-example/images/carpenterS.jpg',
+  '/page-example/images/carpenterXS.jpg'
 ];
 
 self.addEventListener('install', function(e) {
