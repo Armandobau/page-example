@@ -1,4 +1,4 @@
-//var dataCacheName = 'ejempru-v1';
+var dataCacheName = 'ejemPru-v1';
 var cacheName = 'ejemPrueba-1';
 var filesToCache = [
   '/page-example/',
