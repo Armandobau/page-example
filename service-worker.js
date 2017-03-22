@@ -1,5 +1,4 @@
-console.log("hola");
-
+/*
 var dataCacheName = 'ejemPrueba-v1';
 var cacheName = 'ejemplo-prueba-final-1';
 var filesToCache = [
@@ -24,3 +23,4 @@ self.addEventListener('install', function(e) {
     })
   );
 });
+*/
