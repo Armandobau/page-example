@@ -47,7 +47,7 @@ self.addEventListener('activate', function(e) {
    * data, but you actually see the initial data. This happens because the
    * service worker is not yet activated. The code below essentially lets
    * you activate the service worker faster.
-   */
+   *//*
   return self.clients.claim();
 });
 
@@ -61,7 +61,7 @@ self.addEventListener('fetch', function(e) {
      * network and then caches the response. This is called the "Cache then
      * network" strategy:
      * https://jakearchibald.com/2014/offline-cookbook/#cache-then-network
-     */
+     *//*
     e.respondWith(
       caches.open(dataCacheName).then(function(cache) {
         return fetch(e.request).then(function(response){
@@ -75,7 +75,7 @@ self.addEventListener('fetch', function(e) {
      * The app is asking for app shell files. In this scenario the app uses the
      * "Cache, falling back to the network" offline strategy:
      * https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network
-     */
+     *//*
     e.respondWith(
       caches.match(e.request).then(function(response) {
         return response || fetch(e.request);
